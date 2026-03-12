@@ -1,0 +1,24 @@
+import './App.css'
+import BuiltForEveryoneSection from './components/BuiltForEveryoneSection'
+import CapabilitiesSection from './components/CapabilitiesSection'
+import Footer from './components/Footer'
+import HeroSection from './components/HeroSection'
+import KeepingGuardianFreeSection from './components/KeepingGuardianFreeSection'
+import TeamSection from './components/TeamSection'
+import WhyGuardianMattersSection from './components/WhyGuardianMattersSection'
+
+function App() {
+  return (
+    <main className="page-shell">
+      <HeroSection />
+      <WhyGuardianMattersSection />
+      <BuiltForEveryoneSection />
+      <CapabilitiesSection />
+      <KeepingGuardianFreeSection />
+      <TeamSection />
+      <Footer />
+    </main>
+  )
+}
+
+export default App
