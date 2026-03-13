@@ -25,6 +25,9 @@ function HeroSection() {
               <span>App Store</span>
             </span>
           </a>
+          <a className="button button--navy" href="#why-it-matters">
+            Learn more
+          </a>
         </div>
       </div>
 
