@@ -49,7 +49,9 @@
 
 .hero__content {
   grid-area: content;
-  transform: translateY(-74px);
+  transform: none;
+  margin-top: 8px;
+  max-width: 540px;
 }
 
 .hero__content h1,
@@ -73,7 +75,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .hero__brand-logo {
@@ -113,7 +115,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 32px;
+  margin-top: 80px;
 }
 
 .button {
@@ -153,12 +155,13 @@
 }
 
 .button--navy {
-  background: #2a88a2;
+  background: #155678;
   color: #fffef8;
   border: 1px solid currentColor;
   padding: 0 10px;
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
   border-radius: 16px;
+  min-width: clamp(160px, 10vw, 220px);
 }
 
 .button__icon {
@@ -260,8 +263,8 @@
 .hero__watch-image {
   position: absolute;
   /* use percentages for offsets so watch moves with the stack when it shrinks */
-  right: clamp(20px, 8%, 36px);
-  bottom: clamp(15px, 4%, 26px);
+  right: clamp(20px, 2vw, 45px);
+  bottom: clamp(18px, 2vw, 44px);
   width: 26%;
   height: auto;
   object-fit: contain;
@@ -801,7 +804,8 @@
   }
 
   .hero__content {
-    transform: none;
+    transform: translateY(0);
+    margin-top: 32px;
     text-align: center;
   }
 
@@ -845,16 +849,11 @@
     width: clamp(240px, 70%, 90%);
   }
 
-  .hero__watch-image {
-    right: clamp(26px, 8%, 50px);
-    bottom: clamp(8px, 3.5vw, 16px);
-    width: 22%;
-  }
-
   .here_action,
   .hero__actions {
     justify-content: center;
     gap: 12px;
+    margin-top: 32px;
   }
 
   .button--app-store {
@@ -883,6 +882,10 @@
     border-radius: 18px;
   }
 
+  .hero__actions .button--navy {
+    min-width: 0;
+  }
+
   .hero__actions .button {
     flex: 0 1 140px;
     max-width: 150px;
@@ -893,9 +896,31 @@
     width: 20px;
   }
 
-  .hero__actions .button--app-store .button__text span:last-child {
+.hero__actions .button--app-store .button__text span:last-child {
     font-weight: 400;
   }
+
+@media (min-width: 720px) {
+  .here_action,
+  .hero__actions {
+    margin-top: 80px;
+  }
+
+  .hero__brand {
+    margin-bottom: 10px;
+  }
+
+  .hero__content {
+    transform: translateY(0);
+    margin-top: 8px;
+  }
+
+  .hero__actions .button--navy {
+    min-width: clamp(160px, 10vw, 200px);
+    background: #1a5ecb;
+  }
+
+}
 
   .matter-points,
   .capability-row {
@@ -966,10 +991,16 @@
     grid-template-columns: 138px 1fr;
     align-items: start;
     gap: 10px;
+    justify-content: center;
   }
 
   .matter-mobile__row--reverse {
     grid-template-columns: 1fr 138px;
+  }
+
+  .matter-mobile__row,
+  .matter-mobile__row--reverse {
+    justify-content: center;
   }
 
   .section-heading__plain-title {
@@ -987,6 +1018,7 @@
     position: relative;
     width: 138px;
     min-height: 190px;
+    margin-inline: auto;
   }
 
   .matter-mobile__row:first-child .matter-mobile__images {
@@ -995,6 +1027,19 @@
 
   .matter-mobile__row--reverse .matter-mobile__images {
     margin-right: -28px;
+  }
+
+  @media (max-width: 428px) {
+    .matter-mobile__row,
+    .matter-mobile__row--reverse {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .matter-mobile__images {
+      width: 160px;
+      margin-inline: auto;
+    }
   }
 
   .matter-mobile__images img {
@@ -1170,7 +1215,7 @@
   }
 }
 
-@media (min-width: 2600px) {
+@media (min-width: 1600px) {
   .hero {
     align-items: start;
     gap: clamp(32px, 3vw, 60px);
@@ -1192,5 +1237,9 @@
   .hero__device-stack {
     top: 0;
     right: clamp(56px, 4vw, 80px);
+  }
+
+  .hero__actions .button--navy {
+    min-width: clamp(160px, 10vw, 200px);
   }
 }
