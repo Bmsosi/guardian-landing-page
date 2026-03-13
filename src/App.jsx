@@ -18,7 +18,7 @@ function App() {
       <HeroSection />
       {isComingSoon && (
         <div className="coming-soon">
-          <p>ðŸš§ Site under development â€“ coming soon!</p>
+          <p>🛠 Site under development – coming soon...!</p>
         </div>
       )}
       {showSections && (
