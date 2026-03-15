@@ -85,7 +85,7 @@
 }
 
 .hero__brand-name {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.01em;
   color: #ffffff;
@@ -471,7 +471,7 @@
 }
 
 .built-panel__button {
-  align-self: center;
+  align-self: flex-start;
   margin-top: 40px;
   min-height: 40px;
   padding: 0 18px;
@@ -601,7 +601,7 @@
 }
 
 .support-panel__button {
-  align-self: center;
+  align-self: flex-start;
   margin-top: 40px;
   min-height: 40px;
   padding: 0 18px;
@@ -721,12 +721,10 @@
 }
 
 @media (max-width: 1080px) {
-  .hero,
-  .built-section,
-  .support-section,
-  .matter-layout {
+  .hero{
     grid-template-columns: 1fr;
   }
+  
 
   .hero {
     min-height: auto;
@@ -745,25 +743,36 @@
     min-height: 460px;
   }
 
-  .matter-points,
+  /* .matter-points,
   .capability-row {
     grid-template-columns: repeat(2, 1fr);
+  } */
+
+  .team-row--2 {
+    grid-template-columns: repeat(2, minmax(140px, 180px));
+    justify-content: center;
   }
 
-  .team-row--3,
+  .team-row--3 {
+    grid-template-columns: repeat(3, minmax(140px, 180px));
+    justify-content: center;
+  }
+
   .team-row--4 {
-    grid-template-columns: repeat(2, minmax(140px, 180px));
+    grid-template-columns: repeat(4, minmax(140px, 180px));
+    justify-content: center;
   }
 
   .matter-layout {
     justify-items: center;
+    margin-top: 20px;
   }
 
-  .matter-points {
+  /* .matter-points {
     width: min(100%, 680px);
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-  }
+  } */
 
   .matter-points--left,
   .matter-points--right {
@@ -791,6 +800,24 @@
     padding: 64px 0;
   }
 
+  .built-panel, .support-panel {
+    align-items: center;
+  }
+
+  .built-panel p, .support-panel p{
+    text-align: justify;
+  max-width: 65ch;
+  }
+
+  .built-panel__button, .support-panel__button {
+  align-self: center;
+  }
+
+  .built-section,
+  .support-section {
+    grid-template-columns: 1fr;
+  }
+
   .section:not(.here_section),
   .footer {
     width: min(100% - 24px, 1120px);
@@ -807,6 +834,7 @@
     transform: translateY(0);
     margin-top: 32px;
     text-align: center;
+    justify-self: center;
   }
 
   .hero__brand {
@@ -821,7 +849,7 @@
   }
 
   .hero__brand-name {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
 
   .hero__text {
@@ -1064,7 +1092,7 @@
 
   .matter-mobile__row:first-child .matter-mobile__images img:nth-child(3) {
     top: -12px;
-    width: 60%;
+    width: 70%;
     z-index: 3;
   }
 
@@ -1087,7 +1115,7 @@
   .matter-mobile__row--reverse .matter-mobile__images img:nth-child(3) {
     top: -12px;
     width: 60%;
-    right: 0;
+    right: 15px;
     left: auto;
     z-index: 3;
   }
