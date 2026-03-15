@@ -526,6 +526,11 @@
   gap: 8px;
   margin-bottom: 18px;
 }
+.capability-card__header--top {
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
 
 .capability-card__icon-wrap {
   display: inline-flex;
@@ -560,6 +565,7 @@
   margin-top: -16px;
   margin-left: 56px;
 }
+
 
 .support-section {
   display: grid;
@@ -1223,6 +1229,41 @@
 
   .hero__device-stack {
     width: clamp(150px, 50%, 220px);
+  }
+}
+
+@media (max-width: 720px) {
+  .capability-card--top {
+    text-align: left;
+    align-items: flex-start;
+    min-height: auto;
+  }
+
+  .capability-card--top .capability-card__header--top {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .capability-card--top h3 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .capability-card--top .capability-card__icon-wrap {
+    margin-bottom: 0;
+    margin-inline: 0;
+  }
+
+  .capability-card--top p {
+    margin-top: -16px;
+    margin-left: 56px;
+    text-align: left;
+  }
+
+  .support-visual {
+    order: -1;
   }
 }
 

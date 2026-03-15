@@ -15,10 +15,12 @@ function CapabilitiesSection() {
         <div className="capability-row capability-row--top">
           {topCards.map((item) => (
             <article key={item.title} className="capability-card capability-card--top">
-              <div className="capability-card__icon-wrap">
-                <img className="capability-card__icon" src={leaf} alt="" aria-hidden="true" />
+              <div className="capability-card__header capability-card__header--top">
+                <div className="capability-card__icon-wrap">
+                  <img className="capability-card__icon" src={leaf} alt="" aria-hidden="true" />
+                </div>
+                <h3>{item.title}</h3>
               </div>
-              <h3>{item.title}</h3>
               <p>{item.text}</p>
             </article>
           ))}
