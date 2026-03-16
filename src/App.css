@@ -1061,7 +1061,7 @@ html, body {
   }
 
   .matter-mobile__row--reverse .matter-mobile__images {
-    margin-right: -28px;
+    margin-right: 0;
   }
 
   @media (max-width: 428px) {
