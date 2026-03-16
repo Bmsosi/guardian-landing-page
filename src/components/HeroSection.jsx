@@ -2,6 +2,7 @@ import logo from '../assets/image/logo.png'
 import appleLogo from '../assets/image/apple-logo.png'
 import heroPhone from '../assets/image/hero_phone.png'
 import appleWatch from '../assets/image/apple_watch.png'
+import proposalPDF from '../assets/Guardian_Proposal_Spread.pdf'
 
 function HeroSection() {
   return (
@@ -25,7 +26,12 @@ function HeroSection() {
               <span>App Store</span>
             </span>
           </a>
-          <a className="button button--navy" href="#why-it-matters">
+          <a
+            className="button button--navy"
+            href={proposalPDF}
+            target="_blank"
+            rel="noreferrer"
+          >
             Learn more
           </a>
         </div>
