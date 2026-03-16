@@ -1224,6 +1224,48 @@
   .hero__device-stack {
     width: clamp(150px, 50%, 220px);
   }
+  
+
+.curve-text span {
+  display: block;
+  white-space: nowrap; 
+}
+
+
+.curve-text--right-top span:nth-child(1) { margin-left: 5px; }
+.curve-text--right-top span:nth-child(2) { margin-left: 15px; }
+.curve-text--right-top span:nth-child(3) { margin-left: 20px; }
+.curve-text--right-top span:nth-child(4) { margin-left: 26px; }
+
+
+.curve-text--right-bottom span:nth-child(1) { margin-left: 10px; }
+.curve-text--right-bottom span:nth-child(2) { margin-left: 0px; }
+.curve-text--right-bottom span:nth-child(3) { margin-left: -10px; }
+.curve-text--right-bottom span:nth-child(4) { margin-left: -20px; }
+
+
+
+
+.curve-text--left-top span:nth-child(1) { margin-right: 10px; }
+.curve-text--left-top span:nth-child(2) { margin-right: 15px; }
+.curve-text--left-top span:nth-child(3) { margin-right: 20px; }
+.curve-text--left-top span:nth-child(4) { margin-right: 25px; }
+
+
+.curve-text--left-bottom span:nth-child(1) { margin-right: 0px; }
+.curve-text--left-bottom span:nth-child(2) { margin-right: -10px; }
+.curve-text--left-bottom span:nth-child(3) { margin-right: -20px; }
+.curve-text--left-bottom span:nth-child(4) { margin-right: -30px; }
+
+.matter-mobile__row--reverse .matter-point:first-child {
+  margin-top: 8px;
+  transform: translateX(-5px);
+}
+
+.matter-mobile__row--reverse .matter-point:last-child {
+  margin-top: 6px;
+  transform: translateX(-20px);
+}
 }
 
 @media (min-width: 3200px) {
@@ -1270,4 +1312,5 @@
   .hero__actions .button--navy {
     min-width: clamp(160px, 10vw, 200px);
   }
+  
 }

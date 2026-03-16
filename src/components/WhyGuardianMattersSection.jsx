@@ -1,12 +1,12 @@
-import ellipse from '../assets/image/Ellipse.png'
-import ellipses from '../assets/image/Ellipses.png'
-import findObject from '../assets/image/Find_object.png'
-import mobileLeft1 from '../assets/image/mobile_left1.png'
-import mobileLeft2 from '../assets/image/mobile_left2.png'
-import mobileLeft3 from '../assets/image/mobile_left3.png'
-import mobileRight1 from '../assets/image/mobile_right1.png'
-import mobileRight2 from '../assets/image/mobile_right2.png'
-import mobileRight3 from '../assets/image/mobile_right3.png'
+import ellipse from "../assets/image/Ellipse.png";
+import ellipses from "../assets/image/Ellipses.png";
+import findObject from "../assets/image/Find_object.png";
+import mobileLeft1 from "../assets/image/mobile_left1.png";
+import mobileLeft2 from "../assets/image/mobile_left2.png";
+import mobileLeft3 from "../assets/image/mobile_left3.png";
+import mobileRight1 from "../assets/image/mobile_right1.png";
+import mobileRight2 from "../assets/image/mobile_right2.png";
+import mobileRight3 from "../assets/image/mobile_right3.png";
 
 const leftPoints = [
   {
@@ -36,8 +36,8 @@ function WhyGuardianMattersSection() {
       <div className="section-heading section-heading--center">
         <h2 className="section-heading__plain-title">Why Guardian Matters</h2>
         <p className="section-heading__description">
-          Guardian empowers visually impaired individuals with safer navigation, greater
-          independence, and confidence in everyday environments.
+          Guardian empowers visually impaired individuals with safer navigation,
+          greater independence, and confidence in everyday environments.
         </p>
       </div>
 
@@ -77,11 +77,21 @@ function WhyGuardianMattersSection() {
           <div className="matter-mobile__content">
             <article className="matter-point">
               <h2>{leftPoints[0].title}</h2>
-              <p>{leftPoints[0].text}</p>
+              <p className="curve-text curve-text--right-top">
+                <span>Guardian helps visually</span>
+                <span>impaired users navigate</span>
+                <span>spaces confidently without</span>
+                <span>relying constantly on others.</span>
+              </p>
             </article>
             <article className="matter-point">
               <h2>{rightPoints[0].title}</h2>
-              <p>{rightPoints[0].text}</p>
+              <p className="curve-text curve-text--right-bottom">
+                <span>The app detects</span>
+                <span>obstacles and hazards</span>
+                <span>providing immediate alerts</span>
+                <span>to help users avoid accidents.</span>
+              </p>
             </article>
           </div>
         </div>
@@ -90,11 +100,21 @@ function WhyGuardianMattersSection() {
           <div className="matter-mobile__content">
             <article className="matter-point">
               <h2>{leftPoints[1].title}</h2>
-              <p>{leftPoints[1].text}</p>
+              <p className="curve-text curve-text--left-top">
+                <span>Guardian supports</span>
+                <span>navigation in indoor</span>
+                <span>environments where traditional</span>
+                <span>navigation tools often fail.</span>
+              </p>
             </article>
             <article className="matter-point">
               <h2>{rightPoints[1].title}</h2>
-              <p>{rightPoints[1].text}</p>
+              <p className="curve-text curve-text--left-bottom">
+                <span>The system offers</span>
+                <span>reassurance for users</span>
+                <span>and their loved ones</span>
+                <span>through continuous guidance.</span>
+              </p>
             </article>
           </div>
           <div className="matter-mobile__images">
@@ -105,7 +125,7 @@ function WhyGuardianMattersSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default WhyGuardianMattersSection
+export default WhyGuardianMattersSection;
