@@ -10,7 +10,8 @@ import WhyGuardianMattersSection from "./components/WhyGuardianMattersSection";
 function App() {
   const isComingSoon = import.meta.env.VITE_COMING_SOON === "true";
   const showFullPage =
-    import.meta.env.DEV || import.meta.env.VITE_SHOW_FULL_PAGE === "true";
+    import.meta.env.DEV ||
+    import.meta.env.VITE_SHOW_FULL_PAGE !== "false";
   const showSections = showFullPage && !isComingSoon;
 
   return (
