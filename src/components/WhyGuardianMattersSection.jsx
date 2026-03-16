@@ -88,11 +88,11 @@ function WhyGuardianMattersSection() {
 
         <div className="matter-mobile__row matter-mobile__row--reverse">
           <div className="matter-mobile__content">
-            <article className="matter-point">
+            <article className="matter-point matter-point--shift-right">
               <h2>{leftPoints[1].title}</h2>
               <p>{leftPoints[1].text}</p>
             </article>
-            <article className="matter-point">
+            <article className="matter-point matter-point--shift-right-alt">
               <h2>{rightPoints[1].title}</h2>
               <p>{rightPoints[1].text}</p>
             </article>

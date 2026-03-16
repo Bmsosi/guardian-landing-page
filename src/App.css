@@ -661,7 +661,7 @@
   height: 96px;
   margin: 0 auto 16px;
   border-radius: 50%;
-  background: #fb7362;
+  background: #dcdcdc;
 }
 
 .team-member h3 {
@@ -1154,6 +1154,22 @@
 
   .matter-mobile__row--reverse .matter-point {
     text-align: right;
+  }
+
+  .matter-mobile__row--reverse .matter-point--shift-right {
+    transform: translateX(30px);
+  }
+
+  .matter-mobile__row--reverse .matter-point--shift-right p {
+    margin-left: 36px;
+  }
+
+  .matter-mobile__row--reverse .matter-point--shift-right-alt {
+    transform: translateX(18px);
+  }
+
+  .matter-mobile__row--reverse .matter-point--shift-right-alt p {
+    margin-left: 22px;
   }
 
   .matter-mobile__row--reverse .matter-mobile__content {
