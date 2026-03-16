@@ -1061,7 +1061,7 @@ html, body {
   }
 
   .matter-mobile__row--reverse .matter-mobile__images {
-    margin-right: 0;
+    margin-right: -12px;
   }
 
   @media (max-width: 428px) {
@@ -1266,12 +1266,12 @@ html, body {
 
 .matter-mobile__row--reverse .matter-point:first-child {
   margin-top: 8px;
-  transform: translateX(-40px);
+  transform: translateX(-70px);
 }
 
 .matter-mobile__row--reverse .matter-point:last-child {
   margin-top: 6px;
-  transform: translateX(-60px);
+  transform: translateX(-90px);
 }
 }
 
