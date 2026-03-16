@@ -1260,9 +1260,9 @@ html, body {
 
 
 .curve-text--left-bottom span:nth-child(1) { margin-right: 0px; }
-.curve-text--left-bottom span:nth-child(2) { margin-right: -10px; }
-.curve-text--left-bottom span:nth-child(3) { margin-right: -20px; }
-.curve-text--left-bottom span:nth-child(4) { margin-right: -30px; }
+.curve-text--left-bottom span:nth-child(2) { margin-right: -5px; }
+.curve-text--left-bottom span:nth-child(3) { margin-right: -15px; }
+.curve-text--left-bottom span:nth-child(4) { margin-right: -20px; }
 
 .matter-mobile__row--reverse .matter-point:first-child {
   margin-top: 8px;
