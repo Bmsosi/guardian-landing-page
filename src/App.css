@@ -1123,7 +1123,7 @@
   .matter-mobile__row--reverse .matter-mobile__images img:nth-child(3) {
     top: -12px;
     width: 60%;
-    right: 15px;
+    right: 0;
     left: auto;
     z-index: 3;
   }
@@ -1283,12 +1283,12 @@
 
 .matter-mobile__row--reverse .matter-point:first-child {
   margin-top: 8px;
-  transform: translateX(-20px);
+  transform: translateX(-30px);
 }
 
 .matter-mobile__row--reverse .matter-point:last-child {
   margin-top: 6px;
-  transform: translateX(-40px);
+  transform: translateX(-50px);
 }
 }
 
