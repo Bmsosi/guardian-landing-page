@@ -1266,12 +1266,12 @@ html, body {
 
 .matter-mobile__row--reverse .matter-point:first-child {
   margin-top: 8px;
-  transform: translateX(-70px);
+  transform: translateX(-50px);
 }
 
 .matter-mobile__row--reverse .matter-point:last-child {
   margin-top: 6px;
-  transform: translateX(-90px);
+  transform: translateX(-70px);
 }
 }
 
