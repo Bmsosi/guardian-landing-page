@@ -1,5 +1,6 @@
 import demi from './assets/team/demi.jpg';
 import naomi from './assets/team/Naomi.png';
+import abu from './assets/team/abu.jpg';
 
 export const pillars = [
   {
@@ -74,7 +75,7 @@ export const team = [
     linkedin: "#",
     photo: demi,
   },
-  { name: "Aboubakar Muco", role: "Full-Stack Developer", linkedin: "#" },
+  { name: "Aboubakar Muco", role: "Full-Stack Developer", linkedin: "#", photo: abu },
   { name: "Yahui Xu", role: "Full-Stack Developer", linkedin: "#" },
   { name: "Zin Min Htun", role: "Full-Stack Developer", linkedin: "#" },
   { name: "Yi Hsiang Yang", role: "UX/UI & Sound Designer", linkedin: "#" },

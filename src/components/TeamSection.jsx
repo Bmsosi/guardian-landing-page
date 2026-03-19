@@ -23,7 +23,10 @@ function TeamSection() {
                   aria-hidden="true"
                   style={
                     member.photo
-                      ? { backgroundImage: `url(${member.photo})` }
+                      ? {
+                          backgroundImage: `url(${member.photo})`,
+                          backgroundColor: '#dcdcdc',
+                        }
                       : undefined
                   }
                 />
@@ -49,7 +52,10 @@ function TeamSection() {
                   aria-hidden="true"
                   style={
                     member.photo
-                      ? { backgroundImage: `url(${member.photo})` }
+                      ? {
+                          backgroundImage: `url(${member.photo})`,
+                          backgroundColor: '#dcdcdc',
+                        }
                       : undefined
                   }
                 />
