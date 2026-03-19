@@ -1072,7 +1072,7 @@ html, body {
     margin-right: -12px;
   }
 
-  @media (max-width: 428px) {
+  @media (max-width: 320px) {
     .matter-mobile__row,
     .matter-mobile__row--reverse {
       grid-template-columns: 1fr;
