@@ -1,3 +1,6 @@
+import demi from './assets/team/demi.jpg';
+import naomi from './assets/team/Naomi.png';
+
 export const pillars = [
   {
     title: 'Spot scams faster',
@@ -11,7 +14,7 @@ export const pillars = [
     title: 'Protect shared devices',
     text: 'Guardian is designed for homes, schools, and small teams where one mistake can affect everyone.',
   },
-]
+];
 
 export const audiences = [
   {
@@ -26,11 +29,11 @@ export const audiences = [
     title: 'Professionals',
     text: 'Defend client data and everyday browsing with a lightweight security companion.',
   },
-]
+];
 
 export const capabilities = [
   {
-    title: 'Clean Path',
+    title: 'Clear Path',
     text: 'Provides clearer route awareness and detects obstacles to help users move through spaces with more confidence and peace of mind.',
     layout: 'top',
   },
@@ -54,13 +57,23 @@ export const capabilities = [
     text: 'Makes it easier to send help alerts quickly when extra support is needed in unfamiliar or risky situations.',
     layout: 'side',
   },
-]
+];
 
 export const team = [
-  { name: "Naomi Fujii", role: "Project Manager, Developer", linkedin: "#" },
-  { name: "Semih Çetin", role: "Lead Developer", linkedin: "#" },
+  {
+    name: "Naomi Fujii",
+    role: "Project Manager, Developer",
+    linkedin: "#",
+    photo: naomi,
+  },
+  { name: "Semih  Çetin", role: "Lead Developer", linkedin: "#" },
   { name: "Nil Yilmaz", role: "Lead Designer", linkedin: "#" },
-  { name: "Aluko Oluwademilade", role: "Full-Stack Developer", linkedin: "#" },
+  {
+    name: "Aluko Oluwademilade",
+    role: "Full-Stack Developer",
+    linkedin: "#",
+    photo: demi,
+  },
   { name: "Aboubakar Muco", role: "Full-Stack Developer", linkedin: "#" },
   { name: "Yahui Xu", role: "Full-Stack Developer", linkedin: "#" },
   { name: "Zin Min Htun", role: "Full-Stack Developer", linkedin: "#" },

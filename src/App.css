@@ -670,7 +670,10 @@ html, body {
   height: 96px;
   margin: 0 auto 16px;
   border-radius: 50%;
-  background: #dcdcdc;
+  background-color: #dcdcdc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .team-member h3 {
@@ -695,10 +698,16 @@ html, body {
 
 .team-member a::before {
   content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #0f4e77;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  margin-right: 6px;
+  border-radius: 4px;
+  background-color: #0f4e77;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4.98 3.5C4.98 4.6 4.11 5.5 2.99 5.5s-1.99-.9-1.99-2c0-1.1.9-2 1.99-2s1.98.9 1.98 2zm.04 4.5h-4v13h4v-13zm7.82 0H8v13h4.84v-6.72c0-3.19 4.04-3.45 4.04 0V21h4.84V13.43c0-5.4-5.93-5.22-7.82-2.56V8z' fill='%23fff'/%3E%3C/svg%3E");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer {

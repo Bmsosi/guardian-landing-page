@@ -18,7 +18,15 @@ function TeamSection() {
           >
             {row.map((member) => (
               <article key={member.name} className="team-member">
-                <div className="team-member__avatar" aria-hidden="true" />
+                <div
+                  className="team-member__avatar"
+                  aria-hidden="true"
+                  style={
+                    member.photo
+                      ? { backgroundImage: `url(${member.photo})` }
+                      : undefined
+                  }
+                />
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
                 <a href={member.linkedin}>LinkedIn</a>
@@ -36,7 +44,15 @@ function TeamSection() {
           >
             {row.map((member) => (
               <article key={member.name} className="team-member">
-                <div className="team-member__avatar" aria-hidden="true" />
+                <div
+                  className="team-member__avatar"
+                  aria-hidden="true"
+                  style={
+                    member.photo
+                      ? { backgroundImage: `url(${member.photo})` }
+                      : undefined
+                  }
+                />
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
                 <a href={member.linkedin}>LinkedIn</a>

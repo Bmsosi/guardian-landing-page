@@ -6,7 +6,7 @@ function CapabilitiesSection() {
   const bottomCards = capabilities.filter((item) => item.layout === 'side')
 
   return (
-    <section className="section section--light">
+    <section id="capabilities" className="section section--light">
       <div className="section-heading section-heading--center">
         <h2 className="section-heading__plain-title">What Guardian Can Do</h2>
       </div>
