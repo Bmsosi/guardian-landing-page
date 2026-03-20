@@ -1,6 +1,7 @@
 import demi from './assets/team/demi.jpg';
 import naomi from './assets/team/Naomi.png';
 import abu from './assets/team/abu.jpg';
+import yahui from './assets/team/Yahui.jpg';
 
 export const pillars = [
   {
@@ -75,8 +76,14 @@ export const team = [
     linkedin: "#",
     photo: demi,
   },
-  { name: "Aboubakar Muco", role: "Full-Stack Developer", linkedin: "#", photo: abu },
-  { name: "Yahui Xu", role: "Full-Stack Developer", linkedin: "#" },
+  {
+    name: "Aboubakar Muco",
+    role: "Full-Stack Developer",
+    linkedin: "#",
+    photo: abu,
+    photoPosition: 'center 30%',
+  },
+  { name: "Yahui Xu", role: "Full-Stack Developer", linkedin: "#", photo: yahui },
   { name: "Zin Min Htun", role: "Full-Stack Developer", linkedin: "#" },
   { name: "Yi Hsiang Yang", role: "UX/UI & Sound Designer", linkedin: "#" },
   { name: "Arjun Manoj", role: "UX/UI Designer", linkedin: "#" },
