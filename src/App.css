@@ -666,8 +666,8 @@ html, body {
 }
 
 .team-member__avatar {
-  width: 96px;
-  height: 96px;
+  width: 110px;
+  height: 110px;
   margin: 0 auto 16px;
   border-radius: 50%;
   background-color: #dcdcdc;
@@ -682,6 +682,13 @@ html, body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+@media (min-width: 1024px) {
+  .team-member__avatar {
+    width: clamp(130px, 8vw, 150px);
+    height: clamp(130px, 8vw, 150px);
+  }
 }
 
 .team-member h3 {

@@ -32,7 +32,13 @@ function TeamSection() {
                 </div>
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
-                <a href={member.linkedin}>LinkedIn</a>
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  LinkedIn
+                </a>
               </article>
             ))}
           </div>
