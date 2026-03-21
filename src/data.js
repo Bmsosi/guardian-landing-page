@@ -8,7 +8,7 @@ import ana from './assets/team/ana1.jpeg';
 import yang from './assets/team/yang.jpeg';
 import arjun from './assets/team/arjun.jpg';
 import zin from './assets/team/zin.jpeg';
-import tejinder from './assets/team/tejinder.jpeg';
+import tejinder from './assets/team/tejinder.jpg';
 
 export const pillars = [
   {
