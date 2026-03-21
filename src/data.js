@@ -4,7 +4,7 @@ import abu from './assets/team/abu.jpg';
 import yahui from './assets/team/Yahui.jpg';
 import semih from './assets/team/semih.jpg';
 import nil from './assets/team/nil.jpeg';
-import ana from './assets/team/ana.jpeg';
+import ana from './assets/team/ana1.jpeg';
 import yang from './assets/team/yang.jpeg';
 import arjun from './assets/team/arjun.jpg';
 import zin from './assets/team/zin.jpeg';
@@ -133,7 +133,6 @@ export const team = [
     linkedin:
       "https://www.linkedin.com/in/ana-morais-80a613128?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     photo: ana,
-    photoPosition: "center 40%",
   },
   {
     name: "Tejinder Kaur",
